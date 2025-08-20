@@ -1,0 +1,36 @@
+{% extends "header.html" %}
+{% load static %}
+
+{% block content %}
+		<main id="main-content">
+			<!-- hero section -->
+			<section class="hero">
+				<div class="container">
+					<article class="hero-text bounce-in-left">
+						<div>
+							<p class="subtitle">Hi there 👋🏽, i'm</p>
+							<h1 class="name">Om Patel</h1>
+						</div>
+						<div>
+							<p class="intro">
+								Turning ideas into scalable web solutions with Python and Django. Fuelled by curiosity, clean code, and a drive to solve real-world challenges with innovative backend development.
+							</p>
+
+							<div class="hero-btn-container">
+								<a href="https://drive.google.com/file/d/1mczySd7KswJvzl9RJjYBNrMnn5o8fpqA/view?usp=sharing" class="btn hire-btn" download>
+									Download Resume
+								</a>
+								<!-- <a href="#" download="" class="btn download-link"
+									>Download CV</a
+								> -->
+							</div>
+						</div>
+					</article>
+					<img
+						src="{% static 'img/coding-ground.png' %}"
+						alt="coding desk"
+						class="fade-in code" />
+				</div>
+			</section>
+		</main>
+{% endblock  %}
