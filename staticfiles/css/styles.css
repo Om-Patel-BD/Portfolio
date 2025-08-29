@@ -480,9 +480,9 @@ small {
 
 .my-skills ul {
 	padding-block-start: 5rem;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 3.2rem 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.2rem 1.2rem;
 }
 
 /* Robotic, professional skill badges */
@@ -514,6 +514,8 @@ small {
 	line-height: 1.1;
 	min-height: 44px;
 	white-space: nowrap;
+	width: auto;
+	max-width: 100%;
 	transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease, background 240ms ease;
 	animation: neonBreath 3.6s ease-in-out infinite;
 }
