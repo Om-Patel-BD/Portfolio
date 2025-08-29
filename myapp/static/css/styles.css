@@ -77,6 +77,20 @@ body {
 	color: var(--main-clr);
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
+	/* prevent overscroll bounce below footer on mobile */
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+html, body {
+	height: 100%;
+	overflow-y: auto;
+	overscroll-behavior-y: contain;
 }
 
 a {
