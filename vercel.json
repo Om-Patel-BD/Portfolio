@@ -4,11 +4,7 @@
     { "src": "build/**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/build/$1" },
-    { "src": "/about", "dest": "/build/about/index.html" },
-    { "src": "/projects", "dest": "/build/projects/index.html" },
-    { "src": "/contact", "dest": "/build/contact/index.html" },
-    { "src": "/skills", "dest": "/build/skills/index.html" }
-
+    { "src": "/(.*)", "dest": "/build/$1" }
   ]
 }
+
