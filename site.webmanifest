@@ -1,0 +1,26 @@
+{
+    "name": "Om Patel - Backend Developer Portfolio",
+    "short_name": "Om Patel Portfolio",
+    "description": "Professional backend developer and full stack engineer specializing in Python, Django, JavaScript, and modern web technologies.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/static/img/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/img/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["business", "productivity", "utilities"],
+    "lang": "en-US"
+}
+
+

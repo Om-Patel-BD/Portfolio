@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc6a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid Pattern -->
+  <g opacity="0.1">
+    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300 M0 400 L1200 400 M0 500 L1200 500" stroke="#00ff88" stroke-width="1"/>
+    <path d="M100 0 L100 630 M200 0 L200 630 M300 0 L300 630 M400 0 L400 630 M500 0 L500 630 M600 0 L600 630 M700 0 L700 630 M800 0 L800 630 M900 0 L900 630 M1000 0 L1000 630 M1100 0 L1100 630" stroke="#00ff88" stroke-width="1"/>
+  </g>
+  
+  <!-- Main Content Area -->
+  <rect x="100" y="150" width="1000" height="330" rx="20" fill="rgba(255,255,255,0.05)" stroke="url(#accent)" stroke-width="2"/>
+  
+  <!-- Profile Image Placeholder -->
+  <circle cx="200" cy="315" r="80" fill="url(#accent)" opacity="0.8"/>
+  <text x="200" y="325" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="white">OP</text>
+  
+  <!-- Name and Title -->
+  <text x="320" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">Om Patel</text>
+  <text x="320" y="290" font-family="Arial, sans-serif" font-size="32" fill="url(#accent)">Backend Developer</text>
+  <text x="320" y="330" font-family="Arial, sans-serif" font-size="24" fill="#cccccc">Full Stack Engineer</text>
+  
+  <!-- Skills Icons -->
+  <g transform="translate(320, 380)">
+    <!-- Python -->
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="url(#accent)" opacity="0.8"/>
+    <text x="20" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Py</text>
+    
+    <!-- Django -->
+    <rect x="60" y="0" width="40" height="40" rx="8" fill="url(#accent)" opacity="0.8"/>
+    <text x="80" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">D</text>
+    
+    <!-- JavaScript -->
+    <rect x="120" y="0" width="40" height="40" rx="8" fill="url(#accent)" opacity="0.8"/>
+    <text x="140" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">JS</text>
+    
+    <!-- Database -->
+    <rect x="180" y="0" width="40" height="40" rx="8" fill="url(#accent)" opacity="0.8"/>
+    <text x="200" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">DB</text>
+  </g>
+  
+  <!-- Contact Info -->
+  <text x="320" y="450" font-family="Arial, sans-serif" font-size="18" fill="#888888">Portfolio • Projects • Skills • Experience</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="1000" cy="200" r="30" fill="url(#accent)" opacity="0.3"/>
+  <circle cx="1100" cy="400" r="20" fill="url(#accent)" opacity="0.2"/>
+  <circle cx="950" cy="500" r="25" fill="url(#accent)" opacity="0.4"/>
+  
+  <!-- Bottom Accent Line -->
+  <rect x="100" y="580" width="1000" height="4" fill="url(#accent)"/>
+</svg>
+
+
