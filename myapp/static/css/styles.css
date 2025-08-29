@@ -686,9 +686,9 @@ small {
 }
 
 .footer .container {
-	margin-block-start: var(--section-mt);
+	margin-block-start: 0;
 	font-size: 1.35rem;
-	padding: 2rem 1rem;
+	padding: 1rem 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -702,7 +702,7 @@ small {
 .footer div {
 	display: flex;
 	align-items: center;
-	gap: 5rem;
+	gap: 2rem;
 }
 
 .footer ul {
@@ -877,7 +877,7 @@ small {
 
 	.footer .container {
 		justify-content: center;
-		gap: 3rem;
+		gap: 1.5rem;
 	}
 
 	.mail-link {
