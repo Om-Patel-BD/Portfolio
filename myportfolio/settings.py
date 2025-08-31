@@ -27,8 +27,8 @@ SECRET_KEY = os.getenv(
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# Default to False; enable locally by setting DJANGO_DEBUG=True
-DEBUG = os.getenv('DJANGO_DEBUG', 'False').lower() in ('1', 'true', 'yes')
+# Default to True for development; disable in production by setting DJANGO_DEBUG=False
+DEBUG = os.getenv('DJANGO_DEBUG', 'True').lower() not in ('0', 'false', 'no')
 
 # Comma-separated hosts, e.g. "localhost,127.0.0.1,example.com"
 ALLOWED_HOSTS = [h.strip() for h in os.getenv('DJANGO_ALLOWED_HOSTS', '*').split(',') if h.strip()]
@@ -124,6 +124,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+# Additional locations of static files for development
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "myapp", "static"),
+    os.path.join(BASE_DIR, "build", "static"),  # Also include build static files for development
+]
 
 # Output directory for django-distill (static site export)
 DISTILL_DIR = BASE_DIR / 'build'
