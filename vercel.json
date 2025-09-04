@@ -1,10 +1,5 @@
 {
   "buildCommand": "pip3 install -r requirements.txt && python3 manage.py collectstatic --noinput",
-  "functions": {
-    "api/index.py": {
-      "runtime": "vercel-python@0.5.0"
-    }
-  },
   "routes": [
     { "src": "^/static/(.*)$", "dest": "/staticfiles/$1" },
     { "src": "^(?!/static/).*", "dest": "/api/index.py" }
