@@ -122,13 +122,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-# Additional locations of static files for development
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'   # ✅ leading slash
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")  # where collectstatic will gather files
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "myapp", "static"),
-    os.path.join(BASE_DIR, "build", "static"),  # Also include build static files for development
+    os.path.join(BASE_DIR, "myapp", "static"),  # your custom app static
+    # ❌ remove build/static (since no React)
 ]
 
 # Output directory for django-distill (static site export)
