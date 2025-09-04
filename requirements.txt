@@ -9,7 +9,6 @@ cssselect2==0.8.0
 cycler==0.12.1
 defusedxml==0.7.1
 Django==4.2
-django-distill==3.2.7
 django-session-timeout==0.1.0
 fonttools==4.58.4
 idna==3.10
@@ -33,3 +32,7 @@ tinycss2==1.4.0
 tzdata==2025.2
 urllib3==2.5.0
 webencodings==0.5.1
+gunicorn==23.0.0
+whitenoise==6.7.0
+dj-database-url==2.2.0
+psycopg2-binary==2.9.9

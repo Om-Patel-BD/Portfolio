@@ -14,19 +14,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django_distill import distill_path
-from django.contrib import admin
-from django.urls import path, include
-from myapp import views
 
-def get_none():
-    return None
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    distill_path('', views.index, name='index',distill_func=get_none),
-    distill_path('about/', views.about, name='about',distill_func=get_none),
-    distill_path('contact/', views.contact, name='contact',distill_func=get_none),
-    distill_path('skills/', views.skills, name='skills',distill_func=get_none),
-    distill_path('projects/', views.projects, name='projects',distill_func=get_none),
-    
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('skills/', views.skills, name='skills'),
+    path('projects/', views.projects, name='projects'),
 ]
